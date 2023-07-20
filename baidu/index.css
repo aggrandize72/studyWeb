@@ -2,6 +2,7 @@
     margin : 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .upper{
@@ -207,7 +208,7 @@
 }
 
 .tail .nav .custom{
-    display: inline-block;
+    display: none;
     height: 30px;
     line-height: 30px;
     right: 0;
@@ -227,6 +228,11 @@
     cursor: pointer;
 }
 
+.tail .nav .follow:focus+.custom{
+    display: inline-block;
+}
+
+
 .tail .nav .recommended:hover{
     color: #000;
     cursor: pointer;
@@ -236,3 +242,190 @@
     color: #4E6EF2;
     cursor: pointer;
 }
+
+.tail .nav .hot{
+    display: inline-flex;
+    width: 368px;
+    height: 24px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.tail .nav .hot .hotSearch{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.tail .nav .hot .hotSearch .iconfont{
+    font-size: 14px;
+    color: #9195A3;
+}
+
+.tail .nav .hot .hotSearch:hover,
+.tail .nav .hot .hotSearch:hover .iconfont{
+    color: #2f56f0;
+}
+
+.tail .nav .hot .switch{
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #626675;
+}
+
+.tail .nav .hot .switch:hover{
+    color: #4056d3;
+}
+
+.tail .nav .hot .switch .iconfont{
+    display: inline-block;
+    font-size: 10px;
+    margin: 0 6px 0 0;
+    transition: all 0.3s;
+}
+
+.tail .nav .hot .switch:focus .iconfont{
+    transform: rotate(180deg);
+}
+
+.tail .content{
+    position: relative;
+}
+
+.tail .content .left{
+    display: inline-block;
+    width: 720px;
+}
+
+.tail .content .left a{
+    font-size: 20px;
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+}
+
+.tail .content .left a div{
+    color: #222222;
+    margin: 0 0 10px;
+}
+
+.tail .content .left a div:hover{
+    color: #4056d3;
+}
+
+
+.tail .content .left .bottom{
+    color: #222222;
+    font-size: 13px;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.tail .content .left .bottom .broadcast .iconfont{
+    font-size: 14px;
+    margin: 0 6px 0 0;
+}
+
+.tail .content .left .bottom .broadcast{
+    display: inline-block;
+    color: #626675;
+    position: absolute;
+    right: 160px;
+    cursor: pointer;
+}
+
+.tail .content .left .bottom .broadcast:hover{
+    color: #4056d3;
+}
+
+.tail .content .left a i{
+    display: inline-block;
+    width: 184px;
+    height: 122px;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.tail .content .left a img{
+    display: inline-block;
+    width: 184px;
+    height: 122px;
+    overflow: hidden;
+}
+
+.tail .content .left .bottom .author{
+    font-size: 13px;
+    color: #626675;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+}
+
+.tail .content .left .bottom .time{
+    color: #9195A3;
+    cursor: default;
+}
+
+.tail .content .left a .img1{
+    border-radius: 12px 0 0 12px;
+}
+
+
+.tail .content .left a .img3{
+    border-radius:0 12px 12px 0;
+}
+
+.tail .content .right{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 368px;
+}
+
+.tail .content .right a{
+    display: inline-block;
+    width: 368px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.tail .content .right a:hover{
+    color: #4056d3;
+    text-decoration: underline;
+}
+
+.tail .content .right a span{
+    display: inline-block;
+    width: 22px;
+    height: 36px;
+    
+    font-size:18px;
+    font-weight: 600;
+    margin: 0 6px 0 0;
+    color: #9195A3;
+    text-decoration: none;
+}
+
+.tail .content .right a .first{
+    color: #FE2D46;
+}
+
+.tail .content .right a .second{
+    color: #f60;
+}
+
+.tail .content .right a .third{
+    color: #FAA90E;
+}
+/* 
+.tail .content .right a:visited{
+    color: #626675;
+} */
